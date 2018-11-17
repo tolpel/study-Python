@@ -3,4 +3,6 @@ def search4vowels(word):
     vowels = set('aiueo')
     found = vowels.intersection(set(word))
     for vowel in found:
-	print(vowel)
+        print(vowel)
+
+"""gitにあげてみた """

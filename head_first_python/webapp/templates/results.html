@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>以下のデータを送信しました。</p>
+<table>
+<tr><td>フレーズ:</td><td>{{ the_phrase }}</td></tr>
+<tr><td>名前:</td><td>{{ the_letters }}</td></tr>
+</table>
+
+<p>「{{ the_phrase }}」から</p>「{{ the_letters }}」を検索すると、次の結果を返します。</p>
+<h3>{{ the_results }}</h3>
+</form>
+
+{% endblock %}

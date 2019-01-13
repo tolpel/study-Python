@@ -5,4 +5,4 @@ def search4vowels(word):
     for vowel in found:
         print(vowel)
 
-"""gitにあげてみた """
+"""git-krakenからあげてみた """

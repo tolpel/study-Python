@@ -30,7 +30,10 @@ def do_search() ->str:
     letters = request.form['letters']
     title = '検索結果:'
     results = str(search4letters(phrase,letters))
-    log_request(request, results)
+    try:
+        log_request(request, results)
+    except Exception as err:
+        print('****** ロギングに失敗しました：', str(err))
     return render_template('results.html',
                            the_title=title,
                            the_phrase=phrase,
